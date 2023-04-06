@@ -48,4 +48,19 @@ public class UserbookDatabase {
 		session.close();
 	}
 	
+	public UserBook getUserBookById(int id) {
+		Session session = factory.openSession();
+		UserBook userbook = session.get(UserBook.class, id);
+		session.close();
+		return userbook;
+	}
+	
+	public void deleteUserBook(UserBook userbook) {
+		Session session = factory.openSession();
+		Transaction tx = session.beginTransaction();
+		session.remove(userbook);
+		tx.commit();
+		session.close();
+	}
+	
 }

@@ -54,7 +54,7 @@
 						<td>${likedbook.bookId.book_name }</td>
 						<td>${likedbook.bookId.author }</td>
 						<td>${likedbook.bookId.genre }</td>
-						<td><a style="margin: 7.5%" href="readlater/${likedbook.bookId.book_Id }"><i
+						<td><a style="margin: 7.5%" href="removelike/${likedbook.id }"><i
 								class="fa fa-trash" style="color: black"></i></a></td>
 					</tr>
 				</c:forEach>

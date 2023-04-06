@@ -33,4 +33,16 @@ public class UserBookService {
 		List<UserBook> userbooks = userbookdb.getUserBookbyliked(user, like);
 		return userbooks;
 	}
+	
+	public UserBook getUserbookById(int id) {
+		UserBook userbook = userbookdb.getUserBookById(id);
+		return userbook;
+	}
+	
+	public void deleteUserbook(int id) {
+		UserBook userbook = getUserbookById(id);
+		userbookdb.deleteUserBook(userbook);
+	}
+	
+	
 }
