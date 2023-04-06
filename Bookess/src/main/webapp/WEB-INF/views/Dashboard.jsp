@@ -36,7 +36,7 @@
 					</li>
 					<li class="nav-item"><a class="nav-link active" href="readlater">Read Later Books</a>
 					</li>
-					<li style="margin-left: 135vh;" class="nav-item"><a class="nav-link active" >Welcome ${sessionScope.user.name }</a>
+					<li style="margin-left: 120vh;" class="nav-item"><a class="nav-link active" >Welcome ${sessionScope.user.name }</a>
 					</li>
 				</ul>
 			</div>

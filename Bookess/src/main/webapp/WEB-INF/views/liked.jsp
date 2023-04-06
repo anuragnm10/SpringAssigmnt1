@@ -18,6 +18,7 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -32,12 +33,14 @@
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link active"
 						aria-current="page" href="dashboard">Home</a></li>
-					<li style="margin-left: 165vh;" class="nav-item"><a
-						class="nav-link active">Welcome ${sessionScope.user.name }</a></li>
+					<li style="margin-left: 140vh;" class="nav-item"><a
+						class="nav-link active">${sessionScope.user.name }</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+	
+	<h1 style="text-align:center; color:#704a77;">Liked Books</h1>
 	<div class="container">
 		<table class="table">
 			<thead>

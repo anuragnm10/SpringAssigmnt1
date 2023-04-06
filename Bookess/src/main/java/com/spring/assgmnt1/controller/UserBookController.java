@@ -48,6 +48,12 @@ public class UserBookController {
 		return "redirect:/like";
 	}
 	
+	@GetMapping("/removereadlater/{userbookid}")
+	public String removeReadlater(@PathVariable int userbookid) {
+		userbookservice.deleteUserbook(userbookid);
+		return "redirect:/readlater";
+	}
+	
 	
 	
 }

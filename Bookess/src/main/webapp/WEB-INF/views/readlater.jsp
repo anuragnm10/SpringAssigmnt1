@@ -39,12 +39,14 @@
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link active"
 						aria-current="page" href="dashboard">Home</a></li>
-					<li style="margin-left: 165vh;" class="nav-item"><a
-						class="nav-link active">Welcome ${sessionScope.user.name }</a></li>
+					<li style="margin-left: 140vh;" class="nav-item"><a
+						class="nav-link active">${sessionScope.user.name }</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+	
+	<h1 style="text-align:center; color:#704a77;">Read Later Books</h1>
 	<div class="container">
 		<table class="table">
 			<thead>
@@ -61,7 +63,7 @@
 						<td>${book.bookId.book_name }</td>
 						<td>${book.bookId.author }</td>
 						<td>${book.bookId.genre }</td>
-						<td><a style="margin: 7.5%" href="readlater/${book.bookId.book_Id }"><i
+						<td><a style="margin: 7.5%" href="removereadlater/${book.id }"><i
 								class="fa fa-trash" style="color: black"></i></a></td>
 					</tr>
 				</c:forEach>
